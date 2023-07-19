@@ -169,7 +169,7 @@ const Main = () => {
                         
                         <input  value={first} name="Search" id='input'  className={globaltoggle? '  bg-[#1b1b1b] border-red-700 w-24 shadow-md transition-all duration-150 ease-in-out border-2 rounded-md p-3 flex text-center outline-none': ' bg-[#1b1b1b] relative text-center  text-md  shadow-lg w-[150px] lg:w-[500px]  md:w-[300px]  border-2 rounded-md p-3  flex  border-red-700 transition-all ease-in-out duration-150 '} onChange={(e) => setfirst(e.target.value)} />
                         <HiOutlineSearch onClick={()=>{Togglev1(); setswitch1(ID); fadeaway(200);setfirst('') }} className={globaltoggle? 'transition-all duration-150 ease-in-out  hover:text-red-400 text-3xl cursor-pointer font-bold text-white/80 absolute right-[10%] bottom-[50%] left-[35%] top-[25%]' : 'hidden' }/>
-                        <IoMdClose onClick={()=>{Togglev1(); setswitch1(ID); fadeaway(200); setfirst('') }} className={!globaltoggle? ' transition-all duration-150 ease-in-out text-2xl cursor-pointer font-bold text-red-400 absolute right-[0%] bottom-[25%] left-[90%]' : 'hidden' }/>
+                        <IoMdClose onClick={()=>{Togglev1(); setswitch1(ID); fadeaway(200); setfirst('') }} className={!globaltoggle? ' transition-all duration-150 ease-in-out text-2xl cursor-pointer font-bold text-red-400 absolute right-[0%] bottom-[25%] md:left-[90%] left-[75%]' : 'hidden' }/>
                         </div>                          
 
 
