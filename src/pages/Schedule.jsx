@@ -100,17 +100,17 @@ const Schedule = () => {
 
 
   return (
-    <div className='w-full h-full pt-[125px]'>
+    <div className='w-screen sm:w-full h-full pt-[125px]'>
         <div className='w-full h-full mx-auto max-w-[1550px]'>
             
             <h1 className='text-4xl text-red-500 font-bold pb-10'>Schedule</h1>
 
 
             <div id='Monday'className='mb-10 pb-48'>
-                <div id='fadein'className='flex items-center justify-between border-b-2 border-red-400 mb-4 '>
-                  <h2 className='text-2xl font-bold uppercase  mb-2 pb-2  '>Monday</h2>
+                <div id='fadein'className=' flex items-center justify-between border-b-2 border-red-400 mb-4 '>
+                  <h2 className=' text-2xl font-bold uppercase  mb-2 pb-2  '>Monday</h2>
                   <div>
-                    <ul className='flex justify-between '>
+                    <ul className='flex flex-wrap sm:flex-no-wrap justify-between '>
                             <BsDot className='text-3xl mx-4 mb-4 text-red-500'/>
                             <a href='#Tuesday'><BsDot className='text-3xl mx-4 mb-4 cursor-pointer  hover:text-red-500 hover:text-5xl transition-all duration-300 ease-in-out '/></a>
                             <a href='#Wednesday'><BsDot className='text-3xl mx-4 mb-4 cursor-pointer  hover:text-red-500 hover:text-5xl transition-all duration-300 ease-in-out '/></a>

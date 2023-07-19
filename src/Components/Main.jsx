@@ -144,7 +144,7 @@ const Main = () => {
 
 
   return (
-    <div id='main' className='w-full h-full'>
+    <div id='main' className='w-screen  sm:w-full h-full'>
         <div className='pt-40 h-full w-full max-w-[1500px] mx-auto   ' >
             <div className='w-full h-full'>
                 <div className=' flex items-center justify-between pb-4 '>
