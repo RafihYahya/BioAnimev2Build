@@ -1,10 +1,10 @@
 import  axios from 'axios'
 import React, { useEffect } from 'react'
 import { useState } from 'react'
-import {AiOutlineSearch, AiOutlineArrowDown,AiOutlineClose} from 'react-icons/Ai'
-import {BsDot} from 'react-icons/Bs'
-import {IoMdClose} from 'react-icons/Io'
-import {HiOutlineSearch} from 'react-icons/Hi'
+import {AiOutlineSearch, AiOutlineArrowDown,AiOutlineClose} from 'react-icons/ai'
+import {BsDot} from 'react-icons/bs'
+import {IoMdClose} from 'react-icons/io'
+import {HiOutlineSearch} from 'react-icons/hi'
 
 const Main = () => {
 

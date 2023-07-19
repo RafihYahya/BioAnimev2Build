@@ -1,7 +1,7 @@
 import React from 'react'
 import {FaReact} from 'react-icons/fa'
-import {AiOutlineGithub} from 'react-icons/Ai'
-import {SiTailwindcss,SiVite,SiMyanimelist} from 'react-icons/Si'
+import {AiOutlineGithub} from 'react-icons/ai'
+import {SiTailwindcss,SiVite,SiMyanimelist} from 'react-icons/si'
 
 
 

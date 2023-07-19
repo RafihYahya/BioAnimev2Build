@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import {BsDot} from 'react-icons/Bs'
+import {BsDot} from 'react-icons/bs'
 
 
 
