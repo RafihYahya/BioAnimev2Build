@@ -128,16 +128,16 @@ const Schedule = () => {
                 
                {Anime6.Mondays?.map((item,id)=>(
 
-                <div key={id} className='flex h-60  cursor-pointer bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'>
+                <div key={id} className='flex   cursor-pointer bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'>
                         
-                        <a className=' flex h-60  cursor-pointer bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'
+                        <a className=' flex   cursor-pointer bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'
                         href={'/' + Anime6.Mondays[id]?.mal_id + '/0'}>
                         <img className=' object-fill rounded-md w-[200px] ' src={Anime6.Mondays[id].images.jpg.image_url} width='' alt="" />
                         
                         
                         <div className=' transition-all duration-300 ease-in-out group-hover:w-52 w-20 group-hover:shadow-lg  group-hover:opacity-100 opacity-0 p-2 my-4 mx-2  flex items-center justify-center  flex-col '>
 
-                            <h2 className='font-bold text-xl py-2 text-red-400/80 '>{Anime6.Mondays[id]?.title}</h2>
+                        <h2 className='font-bold text-xl py-2 text-red-400/80 transition-all duration-300 ease-in group-hover:block hidden  p-4 '>{Anime6.Mondays[id]?.title.length > 25? Anime6.Mondays[id]?.title.slice(0,25) : Anime6.Mondays[id]?.title }</h2>
                             <h3 className='text-sm font-semibold'><span className={Anime6.Mondays[id]?.episodes? 'text-sm': 'hidden'}>Episodes:</span>{Anime6.Mondays[id]?.episodes}</h3>
                             <h3 className='text-sm '>{Anime6.Mondays[id]?.score}</h3>
                             <h3 className='text-sm '>{Anime6.Mondays[id]?.status}</h3>
@@ -178,16 +178,16 @@ const Schedule = () => {
                 
                {Anime6.Tuesdays?.map((item,id)=>(
 
-                <div key={id} className='flex h-60  cursor-pointer bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'>
+                <div key={id} className='flex   cursor-pointer bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'>
                         
-                        <a className=' flex h-60  cursor-pointer bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'
+                        <a className=' flex   cursor-pointer bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'
                         href={'/' + Anime6.Tuesdays[id]?.mal_id + '/0'}>
                         <img className=' object-fill rounded-md w-[200px] ' src={Anime6.Tuesdays[id]?.images.jpg.image_url} width='' alt="" />
                         
                         
                         <div className=' transition-all duration-300 ease-in-out group-hover:w-52 w-20 group-hover:shadow-lg  group-hover:opacity-100 opacity-0 p-2 my-4 mx-2  flex items-center justify-center  flex-col '>
 
-                            <h2 className='font-bold text-xl py-2 text-red-400/80 '>{Anime6.Tuesdays[id]?.title}</h2>
+                        <h2 className='font-bold text-xl py-2 text-red-400/80 transition-all duration-300 ease-in group-hover:block hidden  p-4 '>{Anime6.Tuesdays[id]?.title.length > 25? Anime6.Tuesdays[id]?.title.slice(0,25) : Anime6.Tuesdays[id]?.title }</h2>
                             <h3 className='text-sm font-semibold'><span className={Anime6.Tuesdays[id].episodes? 'text-sm': 'hidden'}>Episodes:</span>{Anime6.Mondays[id]?.episodes}</h3>
                             <h3 className='text-sm '>{Anime6.Tuesdays[id]?.score}</h3>
                             <h3 className='text-sm '>{Anime6.Tuesdays[id]?.status}</h3>
@@ -221,16 +221,16 @@ const Schedule = () => {
                 
                {Anime6.Wednesdays?.map((item,id)=>(
 
-                <div key={id} className='flex h-60  cursor-pointer bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'>
+                <div key={id} className='flex   cursor-pointer bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'>
                         
-                        <a className=' flex h-60  cursor-pointer bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'
+                        <a className=' flex   cursor-pointer bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'
                         href={'/' + Anime6.Wednesdays[id]?.mal_id + '/0'}>
                         <img className=' object-fill rounded-md w-[200px]' src={Anime6.Wednesdays[id]?.images.jpg.image_url} width='' alt="" />
                         
                         
                         <div className=' transition-all duration-300 ease-in-out group-hover:w-52 w-20 group-hover:shadow-lg  group-hover:opacity-100 opacity-0 p-2 my-4 mx-2  flex items-center justify-center  flex-col '>
 
-                            <h2 className='font-bold text-xl py-2 text-red-400/80 '>{Anime6.Wednesdays[id]?.title}</h2>
+                        <h2 className='font-bold text-xl py-2 text-red-400/80 transition-all duration-300 ease-in group-hover:block hidden  p-4 '>{Anime6.Wednesdays[id]?.title.length > 25? Anime6.Wednesdays[id]?.title.slice(0,25) : Anime6.Wednesdays[id]?.title }</h2>
                             <h3 className='text-sm font-semibold'><span className={Anime6.Wednesdays[id].episodes? 'text-sm': 'hidden'}>Episodes:</span>{Anime6.Mondays[id]?.episodes}</h3>
                             <h3 className='text-sm '>{Anime6.Wednesdays[id]?.score}</h3>
                             <h3 className='text-sm '>{Anime6.Wednesdays[id]?.status}</h3>
@@ -264,16 +264,16 @@ const Schedule = () => {
                 
                {Anime6.Thursdays?.map((item,id)=>(
 
-                <div key={id} className='flex h-60  cursor-pointer bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'>
+                <div key={id} className='flex   cursor-pointer bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'>
                         
-                        <a className=' flex h-60  cursor-pointer bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'
+                        <a className=' flex   cursor-pointer bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'
                         href={'/' + Anime6.Thursdays[id]?.mal_id + '/0'}>
                         <img className=' object-fill rounded-md w-[200px]' src={Anime6.Thursdays[id]?.images.jpg.image_url} width='' alt="" />
                         
                         
                         <div className='  transition-all duration-300 ease-in-out group-hover:w-52 w-20 group-hover:shadow-lg  group-hover:opacity-100 opacity-0 p-2 my-4 mx-2  flex items-center justify-center  flex-col '>
 
-                            <h2 className='font-bold text-xl py-2 text-red-400/80 '>{Anime6.Thursdays[id]?.title}</h2>
+                        <h2 className='font-bold text-xl py-2 text-red-400/80 transition-all duration-300 ease-in group-hover:block hidden  p-4 '>{Anime6.Thursdays[id]?.title.length > 25? Anime6.Thursdays[id]?.title.slice(0,25) : Anime6.Thursdays[id]?.title }</h2>
                             <h3 className='text-sm font-semibold'><span className={Anime6.Thursdays[id]?.episodes? 'text-sm': 'hidden'}>Episodes:</span>{Anime6.Mondays[id]?.episodes}</h3>
                             <h3 className='text-sm '>{Anime6.Thursdays[id]?.score}</h3>
                             <h3 className='text-sm '>{Anime6.Thursdays[id]?.status}</h3>
@@ -308,16 +308,16 @@ const Schedule = () => {
                 
                {Anime6.Fridays?.map((item,id)=>(
 
-                <div key={id} className='flex h-60  cursor-pointer bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'>
+                <div key={id} className='flex   cursor-pointer bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'>
                         
-                        <a className=' flex h-60  cursor-pointer bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'
+                        <a className=' flex   cursor-pointer bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'
                         href={'/' + Anime6.Fridays[id]?.mal_id + '/0'}>
                         <img className=' object-fill rounded-md w-[200px]' src={Anime6.Fridays[id]?.images.jpg.image_url} width='' alt="" />
                         
                         
                         <div className=' m-2 transition-all duration-300 ease-in-out group-hover:w-52 w-20 group-hover:shadow-lg  group-hover:opacity-100 opacity-0 p-2 my-4 mx-2  flex items-center justify-center  flex-col '>
 
-                            <h2 className='font-bold text-xl py-2 text-red-400/80 '>{Anime6.Fridays[id]?.title}</h2>
+                        <h2 className='font-bold text-xl py-2 text-red-400/80 transition-all duration-300 ease-in group-hover:block hidden  p-4 '>{Anime6.Fridays[id]?.title.length > 25? Anime6.Fridays[id]?.title.slice(0,25) : Anime6.Fridays[id]?.title }</h2>
                             <h3 className='text-sm font-semibold'><span className={Anime6.Fridays[id]?.episodes? 'text-sm': 'hidden'}>Episodes:</span>{Anime6.Mondays[id]?.episodes}</h3>
                             <h3 className='text-sm '>{Anime6.Fridays[id]?.score}</h3>
                             <h3 className='text-sm '>{Anime6.Fridays[id]?.status}</h3>
@@ -351,16 +351,16 @@ const Schedule = () => {
                 
                {Anime6.Saturdays?.map((item,id)=>(
 
-                <div key={id} className='flex  h-60  cursor-pointer bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'>
+                <div key={id} className='flex    cursor-pointer bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'>
                         
-                        <a className=' flex  h-60  cursor-pointer bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'
+                        <a className=' flex    cursor-pointer bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'
                         href={'/' + Anime6.Saturdays[id]?.mal_id + '/0'}>
                         <img className=' object-fill rounded-md w-[200px] ' src={Anime6.Saturdays[id]?.images.jpg.image_url} width='' alt="" />
                         
                         
                         <div className='   transition-all duration-300 ease-in-out group-hover:w-52  w-20 group-hover:shadow-lg  group-hover:opacity-100 opacity-0 p-2 my-4 mx-2  flex items-center justify-center  flex-col '>
 
-                            <h2 className='font-bold text-xl py-2 text-red-400/80 '>{Anime6.Saturdays[id]?.title}</h2>
+                        <h2 className='font-bold text-xl py-2 text-red-400/80 transition-all duration-300 ease-in group-hover:block hidden  p-4 '>{Anime6.Saturdays[id]?.title.length > 25? Anime6.Saturdays[id]?.title.slice(0,25) : Anime6.Saturdays[id]?.title }</h2>
                             <h3 className='text-sm font-semibold'><span className={Anime6.Saturdays[id]?.episodes? 'text-sm': 'hidden'}>Episodes:</span>{Anime6.Mondays[id]?.episodes}</h3>
                             <h3 className='text-sm '>{Anime6.Saturdays[id]?.score}</h3>
                             <h3 className='text-sm '>{Anime6.Saturdays[id]?.status}</h3>
@@ -394,16 +394,16 @@ const Schedule = () => {
                 
                {Anime6.Sundays?.map((item,id)=>(
 
-                <div key={id} className='flex h-60  cursor-pointer bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'>
+                <div key={id} className='flex   cursor-pointer bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'>
                         
-                        <a className=' flex h-60  cursor-pointer bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'
+                        <a className=' flex   cursor-pointer bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'
                         href={'/' + Anime6.Sundays[id]?.mal_id + '/0'}>
                         <img className=' object-fill rounded-md w-[200px]' src={Anime6.Sundays[id].images.jpg.image_url} width='' alt="" />
                         
                         
                         <div className=' transition-all duration-300 ease-in-out group-hover:w-52 w-20 group-hover:shadow-lg  group-hover:opacity-100 opacity-0 p-2 my-4 mx-2  flex items-center justify-center  flex-col '>
 
-                            <h2 className='font-bold text-xl py-2 text-red-400/80 '>{Anime6.Sundays[id]?.title}</h2>
+                            <h2 className='font-bold text-xl py-2 text-red-400/80 transition-all duration-300 ease-in group-hover:block hidden  p-4 '>{Anime6.Sundays[id]?.title.length > 25? Anime6.Sundays[id]?.title.slice(0,25) : Anime6.Sundays[id]?.title }</h2>
                             <h3 className='text-sm font-semibold'><span className={Anime6.Sundays[id]?.episodes? 'text-sm': 'hidden'}>Episodes:</span>{Anime6.Mondays[id]?.episodes}</h3>
                             <h3 className='text-sm '>{Anime6.Sundays[id]?.score}</h3>
                             <h3 className='text-sm '>{Anime6.Sundays[id]?.status}</h3>
