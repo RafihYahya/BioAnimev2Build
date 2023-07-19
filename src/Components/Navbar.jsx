@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {FaArrowDown, FaArrowUp} from 'react-icons/Fa'
+import {FaArrowDown, FaArrowUp} from 'react-icons/fa'
 
 
 const Navbar = () => {
