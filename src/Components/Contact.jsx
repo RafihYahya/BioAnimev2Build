@@ -43,7 +43,7 @@ const Contact = () => {
                 </div>
                 <div className='group px-4 py-4 flex items-center justify-center flex-col hover:scale-110 transition-all duration-200 ease-in-out '>
                   <a href="https://github.com/dohaMST"> <AiOutlineGithub className='text-4xl group-hover:text-red-500'/> </a>    
-                  <a href="https://github.com/dohaMST" className='text-sm group-hover:text-red-500'>Doha Mstour</a>
+                  <a href="https://github.com/dohaMST" className='text-sm group-hover:text-red-500'>Doha Mastour</a>
            
                 </div>
                 
