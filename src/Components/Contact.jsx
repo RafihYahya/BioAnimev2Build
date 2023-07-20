@@ -8,9 +8,9 @@ import {SiTailwindcss,SiVite,SiMyanimelist} from 'react-icons/si'
 
 const Contact = () => {
   return (
-    <div id='contact' className='pb-10 w-full h-full bg-black mt-[300px]  bottom-0  '>
-        <div className=' w-full max-w-[1500px] mx-auto mt-20 pt-20 pb-10 flex flex-col  md:flex-row justify-between items-center'>
-            <div>
+    <div id='contact' className=' pb-10 w-full h-full bg-black mt-[300px]  bottom-0  '>
+        <div className=' scale-90 w-full max-w-[1500px] mx-auto mt-20 pt-20 pb-10 flex flex-col  md:flex-row justify-between items-center'>
+            <div className='sm:pb-0 pb-[100px]'>
               <h2 className='font-bold py-2 text-2xl border-b-2'>Made By</h2>
               <ul className='flex justify-items-start py-4 '>
                 <div className='pr-4 py-2 hover:scale-110 transition-all duration-200 ease-in-out '>

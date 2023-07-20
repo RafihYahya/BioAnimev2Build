@@ -144,7 +144,7 @@ const Main = () => {
 
 
   return (
-    <div id='main' className='w-screen  sm:w-full h-full'>
+    <div id='main' className=' w-screen  sm:w-full h-full'>
         <div className='pt-40 h-full w-full max-w-[1500px] mx-auto   ' >
             <div className='w-full h-full'>
                 <div className=' flex items-center justify-between pb-4 '>
@@ -211,7 +211,7 @@ const Main = () => {
 
 
 
-        <div className='w-full h-full'>
+        <div className='sm:scale-100 scale-75 w-full h-full'>
         <div className={globaltoggle? ' mx-auto max-w-[1580px] flex items-center justify-center' : ' hidden '}>
             <ul className='rounded-md bg-red-500/40 mt-8 py-2 mb-8 flex items-center justify-center'>
                 <div className={pagination == 1? 'text-black bg-black/40 rounded-lg px-4 py-2 mx-1' : ' rounded-lg px-4 py-4'}>

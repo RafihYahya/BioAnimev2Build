@@ -425,3 +425,26 @@
 
                       </div> 
               </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div className='pt-4   sm:p-6 grid md:grid-cols-3 gap-8  transition-all duration-300 ease-in w-full h-full'>
+
+                <div className='md:col-span-1 '>
+                      <img className=' rounded-lg shadow-lg  max-w-[300px] sm:w-full scale-90 ' src={Anime3.images?.jpg.image_url} alt={Anime3.title} />
+                      <a className=' flex justify-center  overflow-hidden  mx-auto  py-2 px-4 text-sm md:text-md text-red-500/40 hover:text-red-500/80' href={Anime3.url}>{Anime3.url}</a>  
+                </div>
+                <div className='text-sm  scale-95 sm:scale-100 w-[400px] sm:w-full bg-[#1b1b1b]/60  mt-10 rounded-xl shadow-lg  md:col-span-2 '>
+                    <div className=' p-10 '>

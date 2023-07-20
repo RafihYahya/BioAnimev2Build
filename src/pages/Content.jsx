@@ -47,9 +47,9 @@ if (num == 0 || num == 1 ){
 
 
 
-    <div className=' w-full h-full pt-[125px]'>
+    <div className=' w-[screen] sm:scale-100 scale-75  sm:w-full h-full sm:pt-[125px] pt-[10px] '>
       <div className='w-full h-full mx-auto max-w-[1550px]'>
-          <div className='p-10 mb-10 mt-4 flex items-baseline justify-between'>
+          <div className='p-10 mb-10 mt-4 block sm:flex items-baseline justify-between'>
             <div>
                 <h1 className=' text-3xl font-bold text-red-500/80 uppercase '>{Anime3.title}</h1>
                 <h2>{Anime3.title_english}</h2>  
@@ -60,13 +60,13 @@ if (num == 0 || num == 1 ){
             </div>
           </div>
           
-            <div className='pt-4  p-6 grid md:grid-cols-3 gap-8  transition-all duration-300 ease-in w-full h-full'>
+            <div className='  pt-4  sm:p-6 grid md:grid-cols-3 sm:gap-8 gap-4  transition-all duration-300 ease-in  sm:w-full h-full'>
 
                     <div className='md:col-span-1 '>
                           <img className='pb-2  rounded-lg shadow-lg sm:w-full  w-screen' src={Anime3.images?.jpg.large_image_url} alt={Anime3.title} />
                           <a className=' flex justify-center  overflow-hidden  mx-auto  py-2 px-4 text-sm md:text-md text-red-500/40 hover:text-red-500/80' href={Anime3.url}>{Anime3.url}</a>  
                     </div>
-                    <div className=' sm:w-full w-screen  bg-[#1b1b1b]/60  rounded-xl shadow-lg  md:col-span-2 '>
+                    <div className=' text-sm w-[430px] sm:w-full  bg-[#1b1b1b]/60  rounded-xl shadow-lg  md:col-span-2 '>
                         <div className=' flex flex-col  p-10 '>
                           
 
@@ -235,7 +235,7 @@ if (num == 0 || num == 1 ){
 
                         </div>
                     </div>
-                    <div className='w-screen sm:w-full py-20 px-10 my-4 md:col-span-3'>
+                    <div className='w-[400px] sm:w-full py-20 px-10 my-4 md:col-span-3'>
                       <h1 className='pb-10 text-5xl text-red-500/70 font-bold'>Synopsis:</h1>
                       <div className='p-4  rounded-sm  border-t-2 border-l-2 border-red-500/60 '>
                           <p className='tracking-wide leading-relaxed'>{Synopsis}</p>
@@ -256,9 +256,9 @@ return (
 
 
 
-  <div className='w-screen  sm:w-full h-full pt-[125px]'>
+  <div className=' w-screen  sm:w-full h-full pt-[125px]'>
     <div className='w-full h-full mx-auto max-w-[1550px]'>
-        <div className='p-10 mb-10 mt-4 flex items-baseline justify-between'>
+        <div className='p-10 mb-10 mt-4 block sm:flex items-baseline justify-between'>
           <div>
               <h1 className=' text-3xl font-bold text-red-500/80 uppercase '>{Anime3.name}</h1>
                 
@@ -269,13 +269,13 @@ return (
           </div>
         </div>
         
-          <div className='pt-4  p-6 grid md:grid-cols-3 gap-8  transition-all duration-300 ease-in w-full h-full'>
+          <div className='pt-4  sm:p-6 grid md:grid-cols-3 gap-8  transition-all duration-300 ease-in w-full h-full'>
 
                   <div className='md:col-span-1 '>
-                        <img className=' rounded-lg shadow-lg sm:w-full scale-90 w-[300px]' src={Anime3.images?.jpg.image_url} alt={Anime3.title} />
+                        <img className=' rounded-lg shadow-lg sm:w-full mx-auto  scale-90  max-w-[450px]' src={Anime3.images?.jpg.image_url} alt={Anime3.title} />
                         <a className=' flex justify-center  overflow-hidden  mx-auto  py-2 px-4 text-sm md:text-md text-red-500/40 hover:text-red-500/80' href={Anime3.url}>{Anime3.url}</a>  
                   </div>
-                  <div className='w-screen sm:w-full bg-[#1b1b1b]/60  mt-10 rounded-xl shadow-lg  md:col-span-2 '>
+                  <div className='scale-75 sm:scale-100 text-sm w-[400px] sm:w-full bg-[#1b1b1b]/60  mt-10 rounded-xl shadow-lg  md:col-span-2 '>
                       <div className='   p-10 '>
                         
 
@@ -286,9 +286,9 @@ return (
                               </ul>
 
                               <ul className='flex justify-between  items-center mx-10 my-6  '>
-                                <li  className='font-bold text-md uppercase text-red-400/60  '>Nicknames:</li>
+                                <li  className='font-bold text-md  uppercase  text-red-400/60  '>Nicknames:</li>
                                 <li className='text-center m-10'>
-                                <ul className='flex  justify-between max-w-[500px] text-md uppercase'>{Anime3.nicknames?.map((item,id)=>(<li key={id} className='px-2'>{Anime3.nicknames[id]}</li>))}</ul>
+                                <ul className='flex  sm:flex-row flex-col justify-between max-w-[500px] text-md uppercase'>{Anime3.nicknames?.map((item,id)=>(<li key={id} className='px-2'>{Anime3.nicknames[id]}</li>))}</ul>
                                 
                                
                                 </li>
@@ -360,7 +360,7 @@ return (
   return (
     <div className='w-screen sm:w-full h-full pt-[125px]'>
     <div className='w-full h-full mx-auto max-w-[1550px]'>
-        <div className='p-10 mb-10 mt-4 flex items-baseline justify-between'>
+        <div className='p-10 mb-10 mt-4 block sm:flex items-baseline justify-between'>
           <div>
               <h1 className=' text-3xl font-bold text-red-500/80 uppercase '>{Anime3.name}</h1>
               <h2>{Anime3.family_name}</h2>
@@ -371,13 +371,13 @@ return (
           </div>
         </div>
         
-          <div className='pt-4  p-6 grid md:grid-cols-3 gap-8  transition-all duration-300 ease-in w-full h-full'>
+          <div className='pt-4   sm:p-6 grid md:grid-cols-3 gap-8  transition-all duration-300 ease-in w-full h-full'>
 
                   <div className='md:col-span-1 '>
-                        <img className=' rounded-lg shadow-lg max-w-[300px] sm:w-full scale-90 ' src={Anime3.images?.jpg.image_url} alt={Anime3.title} />
+                        <img className=' rounded-lg shadow-lg  mx-auto max-w-[450px]  sm:w-full scale-90 ' src={Anime3.images?.jpg.image_url} alt={Anime3.title} />
                         <a className=' flex justify-center  overflow-hidden  mx-auto  py-2 px-4 text-sm md:text-md text-red-500/40 hover:text-red-500/80' href={Anime3.url}>{Anime3.url}</a>  
                   </div>
-                  <div className='w-screen sm:w-full bg-[#1b1b1b]/60  mt-10 rounded-xl shadow-lg  md:col-span-2 '>
+                  <div className='text-sm  scale-95 sm:scale-100 w-[400px] sm:w-full bg-[#1b1b1b]/60  mt-10 rounded-xl shadow-lg  md:col-span-2 '>
                       <div className=' p-10 '>
                         
 
@@ -397,7 +397,7 @@ return (
                               <ul className='flex justify-between  items-center mx-10 my-6  '>
                                 <li  className='font-bold text-md uppercase text-red-400/60  '>Alt Names:</li>
                                 <li className='text-center m-10'>
-                                <ul className='flex  justify-between max-w-[500px] text-md uppercase'>{Anime3.alternate_names?.map((item,id)=>(<li key={id} className='px-2'>{Anime3.alternate_names[id]}</li>))}</ul>
+                                <ul className='flex  flex-col sm:flex-row justify-between max-w-[500px] text-md uppercase'>{Anime3.alternate_names?.map((item,id)=>(<li key={id} className='px-2'>{Anime3.alternate_names[id]}</li>))}</ul>
                                 
                                
                                 </li>

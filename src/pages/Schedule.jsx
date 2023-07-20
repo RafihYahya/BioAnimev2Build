@@ -100,14 +100,14 @@ const Schedule = () => {
 
 
   return (
-    <div className='w-screen sm:w-full h-full pt-[125px]'>
+    <div className=' w-screen sm:w-full h-full pt-[125px]'>
         <div className='w-full h-full mx-auto max-w-[1550px]'>
             
             <h1 className='text-4xl text-red-500 font-bold pb-10'>Schedule</h1>
 
 
-            <div id='Monday'className='mb-10 pb-48'>
-                <div id='fadein'className=' flex items-center justify-between border-b-2 border-red-400 mb-4 '>
+            <div id='Monday'className=' mb-10 pb-48'>
+                <div id='fadein'className=' scale-75 sm:scale-100 flex items-center justify-between border-b-2 border-red-400 mb-4 '>
                   <h2 className=' text-2xl font-bold uppercase  mb-2 pb-2  '>Monday</h2>
                   <div>
                     <ul className='flex flex-wrap sm:flex-no-wrap justify-between '>
@@ -123,7 +123,7 @@ const Schedule = () => {
                   <div></div>
                 </div>
                 
-                <div id='delaydelay'className='flex flex-wrap items-center  gap-16 mx-10 p-4 w-full '>
+                <div id='delaydelay'className='flex flex-wrap items-center  gap-8 sm:gap-16 mx-10 p-4 w-full '>
 
                 
                {Anime6.Mondays?.map((item,id)=>(
@@ -132,10 +132,13 @@ const Schedule = () => {
                         
                         <a className=' flex   cursor-pointer bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'
                         href={'/' + Anime6.Mondays[id]?.mal_id + '/0'}>
-                        <img className=' object-fill rounded-md w-[200px] ' src={Anime6.Mondays[id].images.jpg.image_url} width='' alt="" />
+                          <div className='flex flex-col items-center justify-center'>
+                          <img className=' object-fill rounded-md sm:w-[200px] w-[120px] ' src={Anime6.Mondays[id].images.jpg.image_url} width='' alt="" />
+                          <h2 className='font-bold text-sm w-[100px] text-red-400/80 text-center  sm:hidden'>{Anime6.Mondays[id]?.title.length > 15? Anime6.Mondays[id]?.title.slice(0,20) : Anime6.Mondays[id]?.title }</h2>
+                          </div>
+
                         
-                        
-                        <div className=' transition-all duration-300 ease-in-out group-hover:w-52 w-20 group-hover:shadow-lg  group-hover:opacity-100 opacity-0 p-2 my-4 mx-2  flex items-center justify-center  flex-col '>
+                        <div className=' transition-all duration-300 ease-in-out group-hover:w-52 w-20 group-hover:shadow-lg  group-hover:opacity-100 opacity-0 p-2 my-4 mx-2  hidden sm:flex items-center justify-center  flex-col '>
 
                         <h2 className='font-bold text-xl py-2 text-red-400/80 transition-all duration-300 ease-in group-hover:block hidden  p-4 '>{Anime6.Mondays[id]?.title.length > 25? Anime6.Mondays[id]?.title.slice(0,25) : Anime6.Mondays[id]?.title }</h2>
                             <h3 className='text-sm font-semibold'><span className={Anime6.Mondays[id]?.episodes? 'text-sm': 'hidden'}>Episodes:</span>{Anime6.Mondays[id]?.episodes}</h3>
@@ -158,10 +161,10 @@ const Schedule = () => {
 
             <div id='Tuesday'className='mb-10 pb-48'>
 
-            <div id='fadein'className='flex items-center justify-between border-b-2 border-red-400 mb-4 '>
+            <div id='fadein'className='scale-75 sm:scale-100 flex items-center justify-between border-b-2 border-red-400 mb-4 '>
                   <h2 className='text-2xl font-bold uppercase  mb-2 pb-2  '>Tuesday</h2>
                   <div>
-                    <ul className='flex justify-between '>
+                    <ul className='flex flex-wrap sm:flex-no-wrap justify-between '>
                             <a href='#Monday'><BsDot className='text-3xl mx-4 mb-4 cursor-pointer  hover:text-red-500 hover:text-5xl transition-all duration-300 ease-in-out '/></a>
                             <BsDot className='text-3xl mx-4 mb-4 text-red-500'/>
                             <a href='#Wednesday'><BsDot className='text-3xl mx-4 mb-4 cursor-pointer  hover:text-red-500 hover:text-5xl transition-all duration-300 ease-in-out '/></a>
@@ -182,10 +185,12 @@ const Schedule = () => {
                         
                         <a className=' flex   cursor-pointer bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'
                         href={'/' + Anime6.Tuesdays[id]?.mal_id + '/0'}>
-                        <img className=' object-fill rounded-md w-[200px] ' src={Anime6.Tuesdays[id]?.images.jpg.image_url} width='' alt="" />
+              <div className='flex flex-col items-center justify-center'>
+                          <img className=' object-fill rounded-md sm:w-[200px] w-[120px] ' src={Anime6.Tuesdays[id].images.jpg.image_url} width='' alt="" />
+                          <h2 className='font-bold text-sm w-[100px] text-red-400/80 text-center  sm:hidden'>{Anime6.Tuesdays[id]?.title.length > 15? Anime6.Tuesdays[id]?.title.slice(0,20) : Anime6.Tuesdays[id]?.title }</h2>
+                          </div>                        
                         
-                        
-                        <div className=' transition-all duration-300 ease-in-out group-hover:w-52 w-20 group-hover:shadow-lg  group-hover:opacity-100 opacity-0 p-2 my-4 mx-2  flex items-center justify-center  flex-col '>
+                        <div className=' transition-all duration-300 ease-in-out group-hover:w-52 w-20 group-hover:shadow-lg  group-hover:opacity-100 opacity-0 p-2 my-4 mx-2  hidden sm:flex items-center justify-center  flex-col '>
 
                         <h2 className='font-bold text-xl py-2 text-red-400/80 transition-all duration-300 ease-in group-hover:block hidden  p-4 '>{Anime6.Tuesdays[id]?.title.length > 25? Anime6.Tuesdays[id]?.title.slice(0,25) : Anime6.Tuesdays[id]?.title }</h2>
                             <h3 className='text-sm font-semibold'><span className={Anime6.Tuesdays[id].episodes? 'text-sm': 'hidden'}>Episodes:</span>{Anime6.Mondays[id]?.episodes}</h3>
@@ -201,10 +206,10 @@ const Schedule = () => {
             </div>
 
             <div id='Wednesday'className='mb-10 pb-48'>
-            <div id='fadein'className='flex items-center justify-between border-b-2 border-red-400 mb-4 '>
+            <div id='fadein'className='scale-75 sm:scale-100 flex items-center justify-between border-b-2 border-red-400 mb-4 '>
                   <h2 className='text-2xl font-bold uppercase  mb-2 pb-2  '>Wednesday</h2>
                   <div>
-                    <ul className='flex justify-between '>
+                    <ul className='flex flex-wrap sm:flex-no-wrap justify-between '>
                             <a href='#Monday'><BsDot className='text-3xl mx-4 mb-4 cursor-pointer  hover:text-red-500 hover:text-5xl transition-all duration-300 ease-in-out '/></a>
                             <a href='#Tuesday'><BsDot className='text-3xl mx-4 mb-4 cursor-pointer  hover:text-red-500 hover:text-5xl transition-all duration-300 ease-in-out '/></a>
                             <BsDot className='text-3xl mx-4 mb-4 text-red-500'/>
@@ -225,10 +230,12 @@ const Schedule = () => {
                         
                         <a className=' flex   cursor-pointer bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'
                         href={'/' + Anime6.Wednesdays[id]?.mal_id + '/0'}>
-                        <img className=' object-fill rounded-md w-[200px]' src={Anime6.Wednesdays[id]?.images.jpg.image_url} width='' alt="" />
+            <div className='flex flex-col items-center justify-center'>
+                          <img className=' object-fill rounded-md sm:w-[200px] w-[120px] ' src={Anime6.Wednesdays[id].images.jpg.image_url} width='' alt="" />
+                          <h2 className='font-bold text-sm w-[100px] text-red-400/80 text-center  sm:hidden'>{Anime6.Wednesdays[id]?.title.length > 15? Anime6.Wednesdays[id]?.title.slice(0,20) : Anime6.Wednesdays[id]?.title }</h2>
+                          </div>                        
                         
-                        
-                        <div className=' transition-all duration-300 ease-in-out group-hover:w-52 w-20 group-hover:shadow-lg  group-hover:opacity-100 opacity-0 p-2 my-4 mx-2  flex items-center justify-center  flex-col '>
+                        <div className=' transition-all duration-300 ease-in-out group-hover:w-52 w-20 group-hover:shadow-lg  group-hover:opacity-100 opacity-0 p-2 my-4 mx-2  hidden sm:flex items-center justify-center  flex-col '>
 
                         <h2 className='font-bold text-xl py-2 text-red-400/80 transition-all duration-300 ease-in group-hover:block hidden  p-4 '>{Anime6.Wednesdays[id]?.title.length > 25? Anime6.Wednesdays[id]?.title.slice(0,25) : Anime6.Wednesdays[id]?.title }</h2>
                             <h3 className='text-sm font-semibold'><span className={Anime6.Wednesdays[id].episodes? 'text-sm': 'hidden'}>Episodes:</span>{Anime6.Mondays[id]?.episodes}</h3>
@@ -244,10 +251,10 @@ const Schedule = () => {
             </div>
 
             <div id='Thursday'className='mb-10 pb-48'>
-            <div id='fadein'className='flex items-center justify-between border-b-2 border-red-400 mb-4 '>
+            <div id='fadein'className='scale-75 sm:scale-100 flex items-center justify-between border-b-2 border-red-400 mb-4 '>
                   <h2 className='text-2xl font-bold uppercase  mb-2 pb-2  '>Thursday</h2>
                   <div>
-                    <ul className='flex justify-between '>
+                    <ul className='flex flex-wrap sm:flex-no-wrap justify-between '>
                             <a href='#Monday'><BsDot className='text-3xl mx-4 mb-4 cursor-pointer  hover:text-red-500 hover:text-5xl transition-all duration-300 ease-in-out '/></a>
                             <a href='#Tuesday'><BsDot className='text-3xl mx-4 mb-4 cursor-pointer  hover:text-red-500 hover:text-5xl transition-all duration-300 ease-in-out '/></a>
                             <a href='#Wednesday'><BsDot className='text-3xl mx-4 mb-4 cursor-pointer  hover:text-red-500 hover:text-5xl transition-all duration-300 ease-in-out '/></a>
@@ -268,10 +275,13 @@ const Schedule = () => {
                         
                         <a className=' flex   cursor-pointer bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'
                         href={'/' + Anime6.Thursdays[id]?.mal_id + '/0'}>
-                        <img className=' object-fill rounded-md w-[200px]' src={Anime6.Thursdays[id]?.images.jpg.image_url} width='' alt="" />
+
+<div className='flex flex-col items-center justify-center'>
+                          <img className=' object-fill rounded-md sm:w-[200px] w-[120px] ' src={Anime6.Thursdays[id].images.jpg.image_url} width='' alt="" />
+                          <h2 className='font-bold text-sm w-[100px] text-red-400/80 text-center  sm:hidden'>{Anime6.Thursdays[id]?.title.length > 15? Anime6.Thursdays[id]?.title.slice(0,20) : Anime6.Thursdays[id]?.title }</h2>
+                          </div>                        
                         
-                        
-                        <div className='  transition-all duration-300 ease-in-out group-hover:w-52 w-20 group-hover:shadow-lg  group-hover:opacity-100 opacity-0 p-2 my-4 mx-2  flex items-center justify-center  flex-col '>
+                        <div className='  transition-all duration-300 ease-in-out group-hover:w-52 w-20 group-hover:shadow-lg  group-hover:opacity-100 opacity-0 p-2 my-4 mx-2  hidden sm:flex items-center justify-center  flex-col '>
 
                         <h2 className='font-bold text-xl py-2 text-red-400/80 transition-all duration-300 ease-in group-hover:block hidden  p-4 '>{Anime6.Thursdays[id]?.title.length > 25? Anime6.Thursdays[id]?.title.slice(0,25) : Anime6.Thursdays[id]?.title }</h2>
                             <h3 className='text-sm font-semibold'><span className={Anime6.Thursdays[id]?.episodes? 'text-sm': 'hidden'}>Episodes:</span>{Anime6.Mondays[id]?.episodes}</h3>
@@ -288,10 +298,10 @@ const Schedule = () => {
 
             <div id='Friday'className='mb-10 pb-48'>
 
-            <div id='fadein'className='flex items-center justify-between border-b-2 border-red-400 mb-4 '>
+            <div id='fadein'className='flex scale-75 sm:scale-100  items-center justify-between border-b-2 border-red-400 mb-4 '>
                   <h2 className='text-2xl font-bold uppercase  mb-2 pb-2  '>Friday</h2>
                   <div>
-                    <ul className='flex justify-between '>
+                    <ul className='flex flex-wrap sm:flex-no-wrap justify-between '>
                             <a href='#Monday'><BsDot className='text-3xl mx-4 mb-4 cursor-pointer  hover:text-red-500 hover:text-5xl transition-all duration-300 ease-in-out '/></a>
                             <a href='#Tuesday'><BsDot className='text-3xl mx-4 mb-4 cursor-pointer  hover:text-red-500 hover:text-5xl transition-all duration-300 ease-in-out '/></a>
                             <a href='#Thursday'><BsDot className='text-3xl mx-4 mb-4 cursor-pointer  hover:text-red-500 hover:text-5xl transition-all duration-300 ease-in-out '/></a>
@@ -312,10 +322,13 @@ const Schedule = () => {
                         
                         <a className=' flex   cursor-pointer bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'
                         href={'/' + Anime6.Fridays[id]?.mal_id + '/0'}>
-                        <img className=' object-fill rounded-md w-[200px]' src={Anime6.Fridays[id]?.images.jpg.image_url} width='' alt="" />
+
+<div className='flex flex-col items-center justify-center'>
+                          <img className=' object-fill rounded-md sm:w-[200px] w-[120px] ' src={Anime6.Fridays[id].images.jpg.image_url} width='' alt="" />
+                          <h2 className='font-bold text-sm w-[100px] text-red-400/80 text-center  sm:hidden'>{Anime6.Fridays[id]?.title.length > 15? Anime6.Fridays[id]?.title.slice(0,20) : Anime6.Fridays[id]?.title }</h2>
+                          </div>                        
                         
-                        
-                        <div className=' m-2 transition-all duration-300 ease-in-out group-hover:w-52 w-20 group-hover:shadow-lg  group-hover:opacity-100 opacity-0 p-2 my-4 mx-2  flex items-center justify-center  flex-col '>
+                        <div className=' m-2 transition-all duration-300 ease-in-out group-hover:w-52 w-20 group-hover:shadow-lg  group-hover:opacity-100 opacity-0 p-2 my-4 mx-2  hidden sm:flex items-center justify-center  flex-col '>
 
                         <h2 className='font-bold text-xl py-2 text-red-400/80 transition-all duration-300 ease-in group-hover:block hidden  p-4 '>{Anime6.Fridays[id]?.title.length > 25? Anime6.Fridays[id]?.title.slice(0,25) : Anime6.Fridays[id]?.title }</h2>
                             <h3 className='text-sm font-semibold'><span className={Anime6.Fridays[id]?.episodes? 'text-sm': 'hidden'}>Episodes:</span>{Anime6.Mondays[id]?.episodes}</h3>
@@ -331,10 +344,10 @@ const Schedule = () => {
             </div>
 
             <div id='Saturday' className='mb-10 pb-48'>
-            <div id='fadein'className='flex items-center justify-between border-b-2 border-red-400 mb-4 '>
+            <div id='fadein'className='flex scale-75 sm:scale-100  items-center justify-between border-b-2 border-red-400 mb-4 '>
                   <h2 className='text-2xl font-bold uppercase  mb-2 pb-2  '>Saturday</h2>
                   <div>
-                    <ul className='flex justify-between '>
+                    <ul className='flex flex-wrap sm:flex-no-wrap justify-between '>
                             <a href='#Monday'><BsDot className='text-3xl mx-4 mb-4 cursor-pointer  hover:text-red-500 hover:text-5xl transition-all duration-300 ease-in-out '/></a>
                             <a href='#Tuesday'><BsDot className='text-3xl mx-4 mb-4 cursor-pointer  hover:text-red-500 hover:text-5xl transition-all duration-300 ease-in-out '/></a>
                             <a href='#Thursday'><BsDot className='text-3xl mx-4 mb-4 cursor-pointer  hover:text-red-500 hover:text-5xl transition-all duration-300 ease-in-out '/></a>
@@ -355,10 +368,13 @@ const Schedule = () => {
                         
                         <a className=' flex    cursor-pointer bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'
                         href={'/' + Anime6.Saturdays[id]?.mal_id + '/0'}>
-                        <img className=' object-fill rounded-md w-[200px] ' src={Anime6.Saturdays[id]?.images.jpg.image_url} width='' alt="" />
+
+<div className='flex flex-col items-center justify-center'>
+                          <img className=' object-fill rounded-md sm:w-[200px] w-[120px] ' src={Anime6.Saturdays[id].images.jpg.image_url} width='' alt="" />
+                          <h2 className='font-bold text-sm w-[100px] text-red-400/80 text-center  sm:hidden'>{Anime6.Saturdays[id]?.title.length > 15? Anime6.Saturdays[id]?.title.slice(0,20) : Anime6.Saturdays[id]?.title }</h2>
+                          </div>                        
                         
-                        
-                        <div className='   transition-all duration-300 ease-in-out group-hover:w-52  w-20 group-hover:shadow-lg  group-hover:opacity-100 opacity-0 p-2 my-4 mx-2  flex items-center justify-center  flex-col '>
+                        <div className='   transition-all duration-300 ease-in-out group-hover:w-52  w-20 group-hover:shadow-lg  group-hover:opacity-100 opacity-0 p-2 my-4 mx-2  hidden sm:flex items-center justify-center  flex-col '>
 
                         <h2 className='font-bold text-xl py-2 text-red-400/80 transition-all duration-300 ease-in group-hover:block hidden  p-4 '>{Anime6.Saturdays[id]?.title.length > 25? Anime6.Saturdays[id]?.title.slice(0,25) : Anime6.Saturdays[id]?.title }</h2>
                             <h3 className='text-sm font-semibold'><span className={Anime6.Saturdays[id]?.episodes? 'text-sm': 'hidden'}>Episodes:</span>{Anime6.Mondays[id]?.episodes}</h3>
@@ -374,10 +390,10 @@ const Schedule = () => {
             </div>
 
             <div id='sunday'className='mb-10  pb-48'>
-            <div id='fadein'className='flex items-center justify-between border-b-2 border-red-400 mb-4 '>
+            <div id='fadein'className='scale-75 sm:scale-100 flex items-center justify-between border-b-2 border-red-400 mb-4 '>
                   <h2 className='text-2xl font-bold uppercase  mb-2 pb-2  '>Sunday</h2>
                   <div>
-                    <ul className='flex justify-between '>
+                    <ul className='flex flex-wrap sm:flex-no-wrap justify-between '>
                             <a href='#Monday'><BsDot className='text-3xl mx-4 mb-4 cursor-pointer  hover:text-red-500 hover:text-5xl transition-all duration-300 ease-in-out '/></a>
                             <a href='#Tuesday'><BsDot className='text-3xl mx-4 mb-4 cursor-pointer  hover:text-red-500 hover:text-5xl transition-all duration-300 ease-in-out '/></a>
                             <a href='#Thursday'><BsDot className='text-3xl mx-4 mb-4 cursor-pointer  hover:text-red-500 hover:text-5xl transition-all duration-300 ease-in-out '/></a>
@@ -398,10 +414,12 @@ const Schedule = () => {
                         
                         <a className=' flex   cursor-pointer bg-[#1b1b1b] rounded-lg shadow-md hover:opacity-70 group hover:border-b-2 border-red-400'
                         href={'/' + Anime6.Sundays[id]?.mal_id + '/0'}>
-                        <img className=' object-fill rounded-md w-[200px]' src={Anime6.Sundays[id].images.jpg.image_url} width='' alt="" />
+<div className='flex flex-col items-center justify-center'>
+                          <img className=' object-fill rounded-md sm:w-[200px] w-[120px] ' src={Anime6.Sundays[id].images.jpg.image_url} width='' alt="" />
+                          <h2 className='font-bold text-sm w-[100px] text-red-400/80 text-center  sm:hidden'>{Anime6.Sundays[id]?.title.length > 15? Anime6.Sundays[id]?.title.slice(0,20) : Anime6.Sundays[id]?.title }</h2>
+                          </div>                        
                         
-                        
-                        <div className=' transition-all duration-300 ease-in-out group-hover:w-52 w-20 group-hover:shadow-lg  group-hover:opacity-100 opacity-0 p-2 my-4 mx-2  flex items-center justify-center  flex-col '>
+                        <div className=' transition-all duration-300 ease-in-out group-hover:w-52 w-20 group-hover:shadow-lg  group-hover:opacity-100 opacity-0 p-2 my-4 mx-2  hidden sm:flex items-center justify-center  flex-col '>
 
                             <h2 className='font-bold text-xl py-2 text-red-400/80 transition-all duration-300 ease-in group-hover:block hidden  p-4 '>{Anime6.Sundays[id]?.title.length > 25? Anime6.Sundays[id]?.title.slice(0,25) : Anime6.Sundays[id]?.title }</h2>
                             <h3 className='text-sm font-semibold'><span className={Anime6.Sundays[id]?.episodes? 'text-sm': 'hidden'}>Episodes:</span>{Anime6.Mondays[id]?.episodes}</h3>
