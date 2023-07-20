@@ -209,7 +209,7 @@ if (num == 0 || num == 1 ){
                               </ul>
 
 
-                              <ul className='flex justify-between  items-center mx-10 h-[50px]  '>
+                              <ul className='flex flex-col sm:flex-row justify-between  items-center mx-10 h-[50px]  '>
                                 <li className='font-bold text-md uppercase text-red-400/60 w-[100px] '>Genres:</li>
                                 <li className='text-center my-4  mx-10 max-w-[500px] text-md uppercase ' id='3'>
                                 
